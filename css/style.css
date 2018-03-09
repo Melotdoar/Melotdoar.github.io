@@ -42,6 +42,7 @@ height: 5vh;
 width: 35vw;
 margin-left: 7.5vw;
 font-size: 24px;
+padding-left: 2%;
 }
 
 #searchicon{
@@ -49,135 +50,237 @@ display: none;
 
 }
 
+#as {
+    grid-area: as;
+}
+
 aside{
     background-color: white;
-    position: absolute;
-    z-index: 9;
-    background-color: #f1f1f1;
     border: 1px solid #d3d3d3;
-    text-align: center;
+    height: 100%
+}
+
+.kartbild {
+    max-width: 100%;
+    max-height: 70%;
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rubrik {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+input {
+    position: relative;
+    left: 5%;
+    margin: 10px;
 }
 
 
 main{
 display: grid;
-width: 95%;
+width: 90%;
 background-color: lightgrey;
 align-items: center;
-margin-left: 2.5%;
-grid-gap: 20px;
-grid-template-columns: repeat(6, 1fr);
-grid-column-gap: 10px;
+margin: 0 auto;
+padding: 3%;
+grid-template-columns: repeat(4, 1fr);
+grid-column-gap: 20px;
+grid-auto-rows: repeat(4, 1fr);
 grid-template-areas: 
-" . . namn1 namn2 . . "
-" . . namn6 namn7 . . "
-" . . namn11 namn12 .."
-" . . namn16 namn17 . ."
-" . . namn4 namn10 . ."
-" . . namn15 namn20 . ."
-" . . namn19 namn14 . ."
-" . . namn18 namn13 . ."
-" . . namn9 namn5 . ."
-" . . namn3 namn8 . ."
+"as namn1 namn2 namn3"
+"as namn4 namn5 namn6"
+"as namn7 namn8 namn9"
+"as namn10 namn11 namn12"
+
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.namn {
+    max-width: 20%;
+
 }
 
 
 #namn1{
-    width: 225px;
+    max-width: 100%;
     height: 150px;
+    grid-area: namn1;
 }
 
 #namn2{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn2;
 }
 
 #namn3{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn3;
 }
 
 #namn4{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn4;
 }
 
 #namn5{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn5;
 }
 
 #namn6{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn6;
 }
 
 #namn7{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn7;
 }
 
 #namn8{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn8;
 }
 
 #namn9{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn9;
 }
 
 #namn10{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn10;
 }
 
 #namn11{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn11;
 }
 
 #namn12{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn12;
 }
 
 #namn13{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn13;
 }
 
 #namn14{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn14;
 }
 
 #namn15{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn15;
 }
 
 #namn16{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn16;
 }
 
 #namn17{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn17;
 }
 
 #namn18{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn18;
 }
 
 #namn19{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn19;
 }
 
 #namn20{
-    width: 225px;
+    width: 100%;
     height: 150px;
+    grid-area: namn20;
+}
+
+
+@media all and (max-width: 800px) {
+
+    main {
+        background-color: #EEE;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+        width:100%;
+        height: 2400px;
+        grid-template-areas: 
+        "namn1"
+        "namn2"
+        "namn3"
+        "namn4"
+        "namn5"
+        "namn6"
+        "namn7"
+        "namn8"
+        "namn9"
+        "namn10"
+        "namn11"
+        "namn12"
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .kartbild {
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    max-height: 100%;
+    }
+    aside {
+        display: none;
+    }
+
+
+    #searchbar {
+        display: none;
+    }
+    #rubrik {
+        font-size: 24px;
+    }
+
 }
