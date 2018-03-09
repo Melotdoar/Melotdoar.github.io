@@ -1,0 +1,183 @@
+
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+body{
+margin: 0;
+align-items: center;
+}
+
+#block1{
+width: 100%;
+height: 100px;
+}
+
+header{
+display: flex;
+flex-direction: row;
+width: 100%;
+position:fixed;
+align-items: center;
+background-color: #CC0A00;
+box-shadow: 0px, 1px, 3px black;
+max-height: 80px;
+}
+
+#menu{
+margin-left: 2vw;
+}
+
+#rubrik{
+color: white;
+margin-left: 2vw;
+font-family: "Myriad Pro Bold";
+font-size: 72px;
+margin-bottom: 5px;
+}
+
+#searchbar{
+height: 5vh;
+width: 35vw;
+margin-left: 7.5vw;
+font-size: 24px;
+}
+
+#searchicon{
+display: none;
+
+}
+
+aside{
+    background-color: white;
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+
+
+main{
+display: grid;
+width: 95%;
+background-color: lightgrey;
+align-items: center;
+margin-left: 2.5%;
+grid-gap: 20px;
+grid-template-columns: repeat(6, 1fr);
+grid-column-gap: 10px;
+grid-template-areas: 
+" . . namn1 namn2 . . "
+" . . namn6 namn7 . . "
+" . . namn11 namn12 .."
+" . . namn16 namn17 . ."
+" . . namn4 namn10 . ."
+" . . namn15 namn20 . ."
+" . . namn19 namn14 . ."
+" . . namn18 namn13 . ."
+" . . namn9 namn5 . ."
+" . . namn3 namn8 . ."
+}
+
+
+#namn1{
+    width: 225px;
+    height: 150px;
+}
+
+#namn2{
+    width: 225px;
+    height: 150px;
+}
+
+#namn3{
+    width: 225px;
+    height: 150px;
+}
+
+#namn4{
+    width: 225px;
+    height: 150px;
+}
+
+#namn5{
+    width: 225px;
+    height: 150px;
+}
+
+#namn6{
+    width: 225px;
+    height: 150px;
+}
+
+#namn7{
+    width: 225px;
+    height: 150px;
+}
+
+#namn8{
+    width: 225px;
+    height: 150px;
+}
+
+#namn9{
+    width: 225px;
+    height: 150px;
+}
+
+#namn10{
+    width: 225px;
+    height: 150px;
+}
+
+#namn11{
+    width: 225px;
+    height: 150px;
+}
+
+#namn12{
+    width: 225px;
+    height: 150px;
+}
+
+#namn13{
+    width: 225px;
+    height: 150px;
+}
+
+#namn14{
+    width: 225px;
+    height: 150px;
+}
+
+#namn15{
+    width: 225px;
+    height: 150px;
+}
+
+#namn16{
+    width: 225px;
+    height: 150px;
+}
+
+#namn17{
+    width: 225px;
+    height: 150px;
+}
+
+#namn18{
+    width: 225px;
+    height: 150px;
+}
+
+#namn19{
+    width: 225px;
+    height: 150px;
+}
+
+#namn20{
+    width: 225px;
+    height: 150px;
+}
