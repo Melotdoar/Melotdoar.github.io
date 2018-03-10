@@ -37,17 +37,21 @@ transition: 100ms;
 }
 
 #menudrop {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     left: 0px;
-    top: 0px;
+    top: 80px;
     height: 100%;
     width: 400px;
     background-color: #FFF;
     z-index: 5;
+    box-shadow: 5px 8px 15px 5px #888888;
 }
 
 #menulist {
     color: blue;
+    z-index: 6;
 }
 
 #rubrik{
@@ -79,6 +83,7 @@ aside{
     height: 100%;
     padding-bottom: 5%;
     padding: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .kartbild {
@@ -305,6 +310,26 @@ form {
 	color: #99a1a7;
 }
 
+#redbutton {
+    border-radius: 50%;
+    background-color: #CC0A00;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: none;
+}
+
+.menubutton {
+    background-color: #FFF;
+    border: 2px;
+    border-style: solid;
+    border-color: #888888;
+    width: 100% -2px;
+    height: 100px;
+    z-index: 7;
+}
+
+.menubutton:hover {
+    background-color: #888888;
+}
 
 @media all and (max-width: 800px) {
 
@@ -387,12 +412,23 @@ form {
 
     #menudrop {
     width: 100%;
+
     }
 
     #searchicon{
         display: inline;
         position: absolute;
         right: 3%;
-        }
+    }
+
+    #redbutton {
+        display: block;
+        height: 50px;
+        width: 50px;
+        position: fixed;
+        bottom: 10%;
+        right: 30%;
+        z-index: 100;
+    }
 
 }
