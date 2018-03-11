@@ -4,7 +4,7 @@ $(document).ready(() => {
 
     var latestmain = "#sida1main"
 
-    $('#menudrop, #close, #loginmain, #welcomemain').hide()
+    $('#menudrop, #close, #loginmain, #welcomemain, #aboutmain, #contactmain').hide()
 
     $('#searchicon').on('click', () => {
         $('#rubrik, #menu, #searchicon').hide();
@@ -37,9 +37,35 @@ $(document).ready(() => {
         latestmain = "#welcomemain";
     });
 
-    function pr() {
-        document.getElementById("result").innerHTML = document.getElementById('username').value;
-      }
+    $('#aboutbutton').on('click', () => {
+        $(latestmain).hide();
+        $('#menudrop').slideToggle(150);
+        $('#aboutmain').show();
+        latestmain = "#aboutmain";
+    });
 
+    $('#contactusbutton').on('click', () => {
+        $(latestmain).hide();
+        $('#menudrop').slideToggle(150);
+        $('#contactmain').show();
+        latestmain = "#contactmain";
+    });
+
+    span = document.getElementById("result");
+    txt = document.getElementById("username").value;
+    span.appendChild(txt);
+
+ 
 });
 
+function initMap() {
+    var uluru = {lat: -25.363, lng: 131.044};
+    var map = new google.maps.Map(document.getElementById('map1'), {
+      zoom: 4,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
