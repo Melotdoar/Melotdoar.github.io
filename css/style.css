@@ -6,7 +6,7 @@ a:link{
 
 body{
 margin: 0;
-align-items: center;
+/* align-items: center; */
 }
 
 #block1 {
@@ -118,22 +118,48 @@ input {
 }
 
 
-main{   
+main {   
 display: grid;
 width: 90%;
 background-color: lightgrey;
-align-items: center;
+/* align-items: center; */
 margin: 0 auto;
 padding: 3%;
+
+}
+
+#sida1main {
 grid-template-columns: repeat(4, 1fr);
 grid-auto-rows: repeat(4, 1fr);
 grid-template-areas: 
 "as namn namn namn"
 "as namn namn namn"
 "as namn namn namn"
-"as namn namn namn"
-;
+"as namn namn namn" ;
+
 }
+
+
+#loginmain{
+    height: 70vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "lif lia lia"
+        ;
+}
+
+#welcomemain {
+grid-template-columns: repeat(4, 1fr);
+grid-auto-rows: repeat(4, 1fr);
+grid-template-areas: 
+"wt wt wt wt"
+"mg mg ms ms"
+"mg mg ms ms"
+"mg mg ms ms" ;
+
+}
+
 
 #namncontainer {    
 padding-left: 5%;    
@@ -150,6 +176,72 @@ grid-template-areas:
 "namn10 namn11 namn12"
 }
 
+
+#welcometitle {
+    grid-area: wt;
+    background-color: #FFF;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#mystuff {
+    grid-area: ms;
+    background-color: #FFF;
+}
+
+#mygyms {
+    background-color: #FFF;
+    grid-area: mg;
+}
+
+#loginform{
+    grid-area: lif;
+    background-color: #FFF;
+    height: 80%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+}
+
+#loginarticle{
+    padding: 5%;
+    grid-area: lia;
+    background-color: #FFF;
+    height: 80%;
+    margin: 5%;
+    margin-top: 0px;
+    
+}
+
+#loginconfirm {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    background-color: #CC0A00;
+    margin: 0 auto;
+    color: #FFF;
+    transition: 100ms;
+}
+
+#loginconfirm:hover {
+    background-color: #888888;
+}
+
+#articletext {
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#jensa{
+    height:200px;
+    right: 0%;
+    bottom: 0%;
+    float: right;
+    overflow: auto;
+
+}
 
 form {
     font-family: 'PT Sans', sans-serif;
@@ -319,7 +411,7 @@ form {
 
 .menubutton {
     background-color: #FFF;
-    border: 2px;
+    border: 3px;
     border-style: solid;
     border-color: #888888;
     width: 100% -2px;
@@ -331,13 +423,21 @@ form {
     background-color: #888888;
 }
 
+a {
+    color: black;
+}
+
 @media all and (max-width: 800px) {
 
     main {
         background-color: #EEE;
+        width:100%;
+    
+    }
+
+    #sida1main {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(12, 1fr);
-        width:100%;
         height: 2400px;
         padding: 0px;
         grid-template-areas: 
@@ -353,6 +453,18 @@ form {
         "namn"
         "namn"
         "namn"
+
+    }
+
+    #loginmain{
+        height: 1700px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 1fr 1fr;
+        grid-template-areas: 
+        "lif"
+        "lia"
+        "lia"
+            ;
     }
 
     #namncontainer {
@@ -393,7 +505,8 @@ form {
         display: none;
         width: 70%;
         position: absolute;
-        left: 3%;
+        left: 0%;
+        bottom: 10%;
 
     }
     header {
@@ -415,6 +528,13 @@ form {
 
     }
 
+    #close {
+        position: absolute;
+        right: 3%;
+        display: inline;
+        max-height: 60px;
+    }
+
     #searchicon{
         display: inline;
         position: absolute;
@@ -429,6 +549,10 @@ form {
         bottom: 10%;
         right: 30%;
         z-index: 100;
+    }
+
+    #menu:hover {
+        transform: none;
     }
 
 }
