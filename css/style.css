@@ -284,29 +284,38 @@ form {
 }
 
 #maps {
-    height: 100%;
-    width: 100%;
-    /* display: grid;
+    height: calc(70% - 1rem);
+    width: calc(100% - 2rem);
+    display: grid;
+	padding-left: 1rem;
     grid-template-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+	grid-gap: 1rem;
     grid-template-areas:
     "map1 map2"
-    "map1 map2" 
-    ; */
+    "map3 map4";
+}
+
+#maps div {
+	width: 100%;
+	max-height: 100%;
 }
 
 #map1{
-    width: 100%;
-    max-height: 100%;
     grid-area: map1;
 }
 
 #map2{
-    width: 100%;
-    max-height: 100%;
-   grid-area: map2;
+	grid-area: map2;
 }
 
+#map3{
+    grid-area: map3;
+}
+
+#map4{
+	grid-area: map4;
+}
 
 .namn {
     max-width: 20%;
