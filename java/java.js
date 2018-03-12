@@ -60,41 +60,52 @@ $(document).ready(() => {
 });
 
 function initMap() {
-    var uluru = {lat: -25.363, lng: 131.044};
+    var uluru = {lat: 57.7, lng: 11.9};
 	
     var map = new google.maps.Map(document.getElementById('map1'), {
-      zoom: 4,
+      zoom: 10,
       center: uluru
     });
     var marker = new google.maps.Marker({
       position: uluru,
-      map: map
+      map: map,
+      title: 'Gym 1'
     });
+
+    marker.setMap(map);
 	
 	var map2 = new google.maps.Map(document.getElementById('map2'), {
-      zoom: 4,
+      zoom: 8,
       center: uluru
     });
     var marker2 = new google.maps.Marker({
       position: uluru,
-      map: map2
+      map: map2,
+      title: 'Gym 2'
     });
+
+    marker2.setMap(map2);
 	
 	var map3 = new google.maps.Map(document.getElementById('map3'), {
-      zoom: 4,
+      zoom: 6,
       center: uluru
     });
     var marker3 = new google.maps.Marker({
       position: uluru,
-      map: map3
+      map: map3,
+      title: 'Gym 3'
     });
+
+    marker3.setMap(map3);
 	
 	var map4 = new google.maps.Map(document.getElementById('map4'), {
-      zoom: 4,
+      zoom: 5,
       center: uluru
     });
     var marker4 = new google.maps.Marker({
       position: uluru,
       map: map4
     });
+
+    marker4.setMap(map4);
   }
