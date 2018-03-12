@@ -50,7 +50,7 @@ transition: 100ms;
 }
 
 #menulist {
-    color: blue;
+    color: black;
     z-index: 6;
 }
 
@@ -211,8 +211,9 @@ grid-template-areas:
 
 
 #contactform {
+    width: 80%;
     height: 400px;
-    width: 500px;
+    max-width: 500px;
 }
 
 #mystuff {
@@ -469,7 +470,8 @@ form {
 
 .menubutton {
     background-color: #FFF;
-    border: 3px;
+    border-bottom: 3px;
+    border: 0px;
     border-style: solid;
     border-color: #888888;
     width: 100% -2px;
@@ -483,6 +485,11 @@ form {
 
 a {
     color: black;
+}
+
+#redbuttonicon {
+    height: 100%;
+    width: 100%;
 }
 
 @media all and (max-width: 800px) {
@@ -617,11 +624,13 @@ a {
 
     #redbutton {
         display: block;
-        height: 50px;
-        width: 50px;
+        height: 10vw;
+        width: 10vw;
+        min-width: 50px;
+        min-height: 50px;
         position: fixed;
         bottom: 10%;
-        right: 30%;
+        left: 47%;  
         z-index: 100;
     }
 
