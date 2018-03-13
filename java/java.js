@@ -52,6 +52,11 @@ $(document).ready(() => {
         latestmain = "#contactmain";
     });
 
+    $('#redbutton').on('click', () => {
+        $('#as').slideToggle(400)
+
+    });
+
 	initMap();
 });
 

@@ -648,4 +648,12 @@ a {
         transform: none;
     }
 
+    #as {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 60vh;
+    }
+
 }
