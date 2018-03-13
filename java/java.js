@@ -52,12 +52,15 @@ $(document).ready(() => {
         latestmain = "#contactmain";
     });
 
-    span = document.getElementById("result");
-    txt = document.getElementById("username").value;
-//    span.appendChild(txt); // ngt fel med den här koden, skapade ett error så avkommenterade den
-
 	initMap();
 });
+
+
+
+function updateUsername() {
+txt = document.getElementById("username").value;
+document.getElementById("result").innerHTML = txt ;
+}
 
 function initMap() {
     var uluru = {lat: 57.7, lng: 11.9};
