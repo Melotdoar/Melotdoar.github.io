@@ -8,11 +8,6 @@
     <title>Jonnys sida</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-	
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHm6PamchfazBfAsoFgb9NwCPue9wfj4g&callback=initMap"></script>
-	<script src="java/java.js"></script>
 </head>
 
 <body>
@@ -153,7 +148,7 @@
                 <p>Password</p>
                 <input type="text">
                 <br>
-                <input type="button" id="loginconfirm" value="Log in">
+                <input type="button" id="loginconfirm" value="Log in" onclick="showUserName()">
                 </input>
             </form>
         </div>
@@ -190,8 +185,7 @@
 
     <main id="welcomemain">
         <section id="welcometitle">
-            <h1>Welcome
-                <span id="result"></span>
+            <h1>Welcome <span id="result" value="hej"></span>
             </h1>
         </section>
         <article id="mystuff">
@@ -252,7 +246,7 @@
         <h2>Contact Us:</h2>
         <form action="">
             <p>Email</p>
-            <input type="email" name="" id=""> <br>
+            <input type="email" name="" id="emailform"> <br>
             <p>Message</p>
             <input type="text" name="" id="contactform">
         </form>
@@ -273,6 +267,9 @@
             <div class="menubutton" id="aboutbutton">
                 <h2> About </h2>
             </div>
+            <div class="menubutton" id="mygymsbutton">
+                    <h2> My Gyms </h2>
+                </div>
             </ul>
         </div>
 
@@ -280,8 +277,13 @@
 
         <footer></footer>
 
-
-
-
+      
 
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHm6PamchfazBfAsoFgb9NwCPue9wfj4g&callback=initMap"></script>
+<script src="java/java.js"></script>
+
+</html>

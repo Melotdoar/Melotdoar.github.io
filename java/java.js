@@ -52,12 +52,29 @@ $(document).ready(() => {
         latestmain = "#contactmain";
     });
 
-    span = document.getElementById("result");
-    txt = document.getElementById("username").value;
-//    span.appendChild(txt); // ngt fel med den här koden, skapade ett error så avkommenterade den
+    
+    $('#mygymsbutton').on('click', () => {
+        $(latestmain).hide();
+        $('#menudrop').slideToggle(150);
+        $('#welcomemain').show();
+        latestmain = "#welcomemain";
+    });
+
 
 	initMap();
 });
+
+function showUserName() {  
+    var input, text
+    input = document.getElementById('username');
+    text = input.value();
+    document.getElementById('result').innerHTML = text;
+
+
+}
+
+
+
 
 function initMap() {
     var uluru = {lat: 57.7, lng: 11.9};
