@@ -1,5 +1,3 @@
-// JAVA != JAVASCRIPT, a.k.a. byt namn på filen & mappen :P
-
 $(document).ready(() => {
     
 
@@ -52,7 +50,6 @@ $(document).ready(() => {
         latestmain = "#contactmain";
     });
 
-<<<<<<< HEAD
     
     $('#mygymsbutton').on('click', () => {
         $(latestmain).hide();
@@ -61,38 +58,23 @@ $(document).ready(() => {
         latestmain = "#welcomemain";
     });
 
-=======
     $('#redbutton').on('click', () => {
         $('#as').slideToggle(400)
 
     });
->>>>>>> 49f21846b9998680c0e4fb1a4e3e1793e8472738
 
 	initMap();
 });
 
-<<<<<<< HEAD
-function showUserName() {  
-    var input, text
-    input = document.getElementById('username');
-    text = input.value();
-    document.getElementById('result').innerHTML = text;
-
-
-}
-
-
-
-
-=======
-
+/* för att visa username */
 
 function updateUsername() {
 txt = document.getElementById("username").value;
 document.getElementById("result").innerHTML = txt ;
 }
 
->>>>>>> 49f21846b9998680c0e4fb1a4e3e1793e8472738
+/* för att få google maps att funka */
+
 function initMap() {
     var uluru = {lat: 57.7, lng: 11.9};
 	

@@ -215,6 +215,12 @@ grid-template-areas:
     width: 80%;
     height: 400px;
     max-width: 500px;
+    margin-left: 5.8%;
+}
+
+#emailform {
+    width: 80%;
+    max-width: 500px;
 }
 
 #mystuff {
@@ -500,6 +506,7 @@ a {
 #redbuttonicon {
     height: 100%;
     width: 100%;
+    transform: rotate(-45deg);
 }
 
 @media all and (max-width: 800px) {
@@ -656,4 +663,7 @@ a {
         height: 60vh;
     }
 
+    #contactform {
+        margin-left: 7%;
+    }
 }
